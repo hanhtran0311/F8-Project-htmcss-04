@@ -121,6 +121,14 @@ a {
   transition: 0.3s;
 }
 
+.heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 5.2rem;
+  line-height: 1.19;
+  color: var(--primary-color);
+}
+
 /* ------------- Hero ------------- */
 .hero {
   margin-top: 92px;
@@ -281,4 +289,126 @@ a {
   margin-left: 24px;
   text-decoration-line: underline;
   color: #000958;
+}
+
+/* ------------- About ------------- */
+.about {
+  margin-top: 207px;
+}
+
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__heading {
+  margin-top: 15px;
+  width: 446px;
+}
+
+.about__desc {
+  margin-top: 24px;
+  width: 431px;
+}
+
+.about__list {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px 24px;
+}
+
+.about__item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.about__item-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: #ff5d31;
+  box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
+  border-radius: 4px;
+}
+
+.about__item-icon::before {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 7px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  rotate: -45deg;
+}
+
+/* About media */
+.about__media {
+  position: relative;
+  margin-left: 108px;
+}
+
+.about__info {
+  position: absolute;
+  top: 90px;
+
+  margin-bottom: 0;
+  margin-left: -100px;
+  width: 136px;
+  height: 156px;
+  padding: 31px 26px;
+  background: #5bd6e2;
+  box-shadow: -15px 26px 48px rgba(85, 240, 255, 0.17);
+  border-radius: 10px;
+}
+
+.about__info-icon {
+  position: absolute;
+  top: -40px;
+  right: -30px;
+}
+
+.about__info-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 4.2rem;
+  color: #ffffff;
+}
+
+.about__info-text {
+  display: inline-block;
+  padding-top: 14px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.43;
+  text-align: center;
+  color: #c6f4f9;
+}
+
+.about__thumb {
+  margin-top: 150px;
+  width: 494px;
+  height: 365px;
+  background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+  border-radius: 16px;
+}
+
+.about__img {
+  margin-top: -237px;
+  margin-left: 15px;
+  width: 450px;
+  height: 602px;
+  object-fit: cover;
+}
+
+.about__decor {
+  position: absolute;
+  top: 85px;
+  right: -50px;
+  z-index: -1;
 }
