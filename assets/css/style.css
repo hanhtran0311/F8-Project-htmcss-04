@@ -364,7 +364,7 @@ a {
 }
 
 .about__item::after {
-  content: url(/assets/icon/about-check-icon.svg);
+  content: url(../icon/check-icon.svg);
   position: absolute;
   top: 2px;
   left: 5px;
